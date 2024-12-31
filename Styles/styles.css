@@ -1,23 +1,19 @@
-* {
-  color: rgb(1, 1, 69);
-  background-color: rgb(133, 242, 209)!important;
-}
+.box-blue {
+  background: lightskyblue;
+  height: 100px;
+  width: 100px; 
+  }
+.box-orange {
+  position: absolute;
+  background: orange;
+  width: 100px;
+  height: 100px;
+  right: 50px;     /*50px relative to the most-right of parent*/
+  }
 
-h1 {
-  color: rgb(125, 24, 46);
-  background-color: rgb(216, 230, 91);
-}
-
-h1.boldfont {
-  color: rgb(125, 24, 46);
-  background-color: rgb(216, 230, 91);
-  font-weight: bold;
-}
-
-h2 {
-  color: rgb(5, 54, 122);
-}
-
-p {
-  color: rgb(3, 60, 62);
-}
+.container {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  background: lightgray;
+  }
