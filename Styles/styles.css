@@ -1,19 +1,16 @@
-.box-blue {
-  background: lightskyblue;
-  height: 100px;
-  width: 100px; 
-  }
-.box-orange {
-  position: absolute;
-  background: orange;
-  width: 100px;
-  height: 100px;
-  right: 50px;     /*50px relative to the most-right of parent*/
-  }
+.menu {
+  list-style: none;
+  margin:0px;
+  padding: 10px;
+}
 
-.container {
-  position: relative;
-  left: 10px;
-  top: 10px;
-  background: lightgray;
-  }
+.menu li a {
+  display: block;
+  padding: 10px;
+  background-color: aqua;
+}
+
+.menu li {
+  margin: 5px;
+  float: left;
+}
