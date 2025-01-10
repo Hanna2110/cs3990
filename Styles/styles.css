@@ -1,91 +1,24 @@
-/*a Basic Flex Container and Flex Items*/
-.flex-container-basic {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container {
+  display: grid;
+  grid-template-columns: auto 100px 30%;
+  grid-template-rows: 200px auto;
+  gap: 10px;
+  background-color:aqua;
+  padding: 1em;
 }
 
-.flex-item-basic{
-  flex: 1; /* Equal width for all items */
-  padding: 20px;
-  text-align: center;
+.box{
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
 }
 
-.flex-item-basic:first-child, .flex-item-align-items:first-child{
-  background-color: #b31916;
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 50px 1fr;
+  gap: 5px;
+  background-color:rgb(60, 5, 179);
+
 }
-
-.flex-item-basic:nth-child(2), .flex-item-align-items:nth-child(2){
-  background-color: #1aa715;
-}
-
-.flex-item-basic:nth-child(3), .flex-item-align-items:nth-child(3){
-  background-color: #5185e5;
-}
-
-
-/*Changing the Flex Direction:*/
-.flex-container-columns {
-  display: flex;
-  flex-direction: column; /* Change direction to a column */
-}
-
-/*Aligning Flex Items Along the Cross Axis*/
-
-.flex-container-align-items1{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align items to the start of the cross axis */
-  background-color: beige;
-  height: 300px; /* Or whatever */
-}
-
-.flex-container-align-items2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Align items to the end of the cross axis */
-  justify-content:flex-end; /*items are packed toward the end of the flex-direction*/
-  background-color: rgb(86, 88, 101);
-  height: 300px; /* Or whatever */
-}
-
-.flex-item-align-items {
-  padding: 20px;
-  text-align: center;
-}
-
-.flex-container-navigation{
-  /* We first create a flex layout context */
-  display: flex;
-
-  /* Then we define the flow direction 
-     and if we allow the items to wrap */
-   
-  flex-flow: row wrap;/* Remember this is the same as:
-  * flex-direction: row;
-  * flex-wrap: wrap;
-  */
-
-  /* Then we define how is distributed the remaining space */
-  justify-content: space-around;
-
-  justify-content: flex-end;/*items are packed toward the end of the flex-direction*/
-
-  list-style: none;
-  margin: 0; 
-  background: rgb(3, 113, 5);
-}
-
-.flex-container-navigation a{ 
-  text-align: center; 
-  padding: 10px;
-  color:#f8f8f8;  
-  text-decoration: none; 
-}
-
-.flex-container-navigation a:hover{
-  background-color: #b31916;
-}
-
-
 
