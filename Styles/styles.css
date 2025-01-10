@@ -22,3 +22,23 @@
 
 }
 
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 10px;
+  background-color:brown;
+  padding: 1em; /*scales based on the current element’s font size*/
+  max-width: 70rem; /*relative to the font size of the root element */
+  margin: 1rem;
+}
+
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  background-color:blueviolet;
+  padding: 1em; /*scales based on the current element’s font size*/
+  max-width: 70rem; /*relative to the font size of the root element */
+  margin: 1rem;
+}
