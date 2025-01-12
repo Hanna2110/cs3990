@@ -2,3 +2,73 @@
   float: left;
   padding: 15px;
 }
+
+* {
+  box-sizing: border-box;
+
+}
+
+.header{
+  background-color: #4c066f;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+.main::after {
+  content: "";
+  clear: both;
+  display: block;
+  }
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 5px;
+  margin-bottom: 7px;
+  background-color:#a550cf;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #4b1566;
+}
+
+.content {
+  padding: 10px;
+  text-align: justify;
+  color:  #4b1566;
+}
+
+.right {
+  background-color:#a550cf;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer {
+  padding: 15px;
+  text-align: center;
+  color:  #4b1566;
+  font-weight: bold;
+  background-color:#a550cf;
+}
+
+
+/* Mobile First - For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+.col-1,.col-3 {width: 25%;}
+.col-2 {width: 50%;}
+}
+
+
+
