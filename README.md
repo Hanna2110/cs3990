@@ -4,11 +4,18 @@ CS 3990: Web Based Internet Technology 3 (3-0-3) UT
 For the 1st part of our Practice we will use GitHub Pages
 
 Usefull links to get familiar with GitHub Pages fundamentals:
+
 https://docs.github.com/en/pages/quickstart
+
 https://builtin.com/software-engineering-perspectives/github-pages
+
 https://happycoding.io/tutorials/html/github-pages
+
 https://abhiappmobiledeveloper.medium.com/github-pages-a-complete-tutorial-151cb6cade9c
+
 https://gohugo.io/hosting-and-deployment/hosting-on-github/
+
+
 
 Before to start your 1st Assignment please complete the following steps:
 1. Create a GitHub Repository: cs3990_labs_Oractice_StudentLastName
