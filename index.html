@@ -11,9 +11,9 @@
       This ensures that your webpage is displayed using the latest standards-compliant engine, improving both performance and design consistency-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--Define a description of your web page-->
-    <meta name="description" content="Example 1 for HTML & CSS module" />
+    <meta name="description" content="HTML Lists examples" />
     <meta name="author" content="Hanna" />
-    <title>cs3990: Css Grid Example</title>
+    <title>cs3990: HTML Lists examples</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -24,45 +24,85 @@
     <link rel="stylesheet" href="Styles\styles.css" />
   </head>
   <body>
+    <h2> Why Lists and What?</h2>
+    <p>A list refers to any information displayed in a logical or linear form. 
+      It is a series of items written together in a meaningful group or sequence and marked by bullet points,
+      numbers, etc.</p>
+
+    <h2>Types of lists in HTML</h2>
+    <ul>There are 3 types of lists in HTML:
+      <li>Unordered list or Bulleted list - &lt ul &gt</li>
+      <li>Ordered list or Numbered list - &lt ol &gt</li>
+      <li>Description list or Definition list - &lt dl &gt</li>
+    </ul>
+
+    <h3>An example is a shopping list:</h3>
+    <ul type="square">
+      <li>milk</li>
+      <li>coffee beans</li>
+    </ul>
+
+    <h3>An example is a 2<sup>-nd</sup> shopping list:</h3>
+    <ul type="circle">
+      <li>bread</li>
+      <li>water</li>
+    </ul>
+
+    <h3>A numbered list is referred to as an “ordered list”</h3>
+    <p>Ordered (numbered) lists are used to display a list of items that should be in a specific order. 
+    An example would be cooking instructions:</p>
+    <ol>
+      <li>Gather ingredients</li>
+      <li>Mix ingredients together</li>
+      <li>Place ingredients in a baking dish</li>
+      <li>Bake in oven for an hour</li>
+      <li>Remove from oven</li>
+      <li>Allow to stand for ten minutes</li>
+      <li>Serve</li>
+      <li>Ask Hanna to try!</li>
+    </ol>
+
+    <p>Ordered lists can be displayed with several sequencing options.</p>
+    <ol type="a">Letters:
+      <li>Lowercase ascii letters (a, b, c…)</li>
+      <li>Uppercase ascii letters (A, B, C…).</li>
+    </ol>
+    <ol type="i">Numbers:
+      <li>Decimal numbers (1, 2, 3…) - by default</li>
+      <li>Decimal numbers with leading zeros (01, 02, 03…)</li>
+      <li>Lowercase Roman numerals (i, ii, iii…)</li>
+      <li>Uppercase  Roman numerals (i, ii, iii…)</li>
+    </ol>
+
+    <p>A common requirement in ordered list usage is to get them to start with a number other than 1 (or i, or I, etc.).
+      This is done using the start attribute.
+      This is useful if you have a single list of items, 
+      but need to break up the list with a note or other related information.
+    </p>
+    <ol>A new cooking instruction:
+      <li>Gather ingredients</li>
+      <li>Mix ingredients together</li>
+      <li>Place ingredients in a baking dish</li>
+
+      <p>Before you place the ingredients in the baking dish, preheat the oven to
+        180 degrees centigrade/350 degrees fahrenheit in readiness for the next step.</p>
+      
+      <li start="4">Bake in oven for an hour</li>
+      <li>Remove from oven</li>
+      <li>Allow to stand for ten minutes</li>
+      <li>Serve</li>
+      <li>Ask Hanna to try!</li>
+    </ol>
+
+    <h3>Description lists</h3>
+    <dl>
+      <dt>Coffee</dt>
+        <dd>a beverage made from roasted, ground coffee beans</dd>
+      <dt>Tea</dt>
+        <dd>Who likes this here?</dd>
+    </dl>
+
     
-    <!--
-    <div class="container">
-      <div class="box">Item one</div>
-      <div class="box">Item two</div>
-      <div class="box">Item three</div>
-      <div class="box">Item four</div>
-      <div class="box">Item five</div>
-    </div>
-
-    <div class="container1">
-      <div class="box">Item one</div>
-      <div class="box">Item two</div>
-      <div class="box">Item three</div>
-      <div class="box">Item four</div>
-      <div class="box">Item five</div>
-    </div>
-  -->
-
-    <div class="container2">
-      <div class="box">Item one</div>
-      <div class="box">Item two</div>
-      <div class="box">Item three</div>
-      <div class="box">Item four</div>
-      <div class="box">Item five</div>
-      <div class="box">Item six</div>
-      <div class="box">Item seven</div>
-      <div class="box">Item eight</div>
-    </div>
-
-    <div class="container3">
-      <div class="box">Item one</div>
-      <div class="box">Item two</div>
-      <div class="box">Item three</div>
-      <div class="box">Item four</div>
-      <div class="box">Item five</div>
-      <div class="box">Item six</div>
-      <div class="box">Item seven</div>
-      <div class="box">Item eight</div>
-    </div>
+   
   </body>
 </html>
