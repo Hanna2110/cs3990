@@ -37,6 +37,9 @@
 // let userName=prompt("Your name?","Hanna")
 // alert(`Hi ${userName}! Nice to meet you!`)
 
+
+/*
+
 function sayHi1() {
     let msg = "Hello, I'm Hanna"; // local variable  
     alert(msg);
@@ -76,3 +79,56 @@ function sayHi4() {
 console.log( instructor ); // Hanna 
 sayHi4()//Hello, Franco
 console.log( instructor ); // Hanna
+
+*/
+/*
+function HiFromHanna() {
+    console.log('Hi! I am Hanna');
+  }
+
+setTimeout(HiFromHanna);//immediate execution ==regular call
+setTimeout(HiFromHanna, 1000);////execution in 1 sec
+
+function HiFromHanna1(username) {
+    console.log(`Hi ${username}! I am Hanna`);
+  }
+
+setTimeout(HiFromHanna1, 1000, 'Joe');////execution in 1 sec
+*/
+
+//setTimeout("console.log('Hi! I am Hanna')", 1000);//NOT recommended!!!
+//setTimeout(()=>console.log('Hi! I am Hanna'), 1000); //correct way
+
+/*
+let timerID = setTimeout(() => alert("It will be never displayed!"), 1000);
+alert(timerID); // timer identifier
+
+clearTimeout(timerID);
+alert(timerID); // same identifier (doesn't become null after canceling)
+*/
+
+/*
+//show the message every 5 seconds
+let timerID = setInterval(() => alert('Hi!'), 5000);
+
+// after 5 seconds stop
+setTimeout(() => { clearInterval(timerID); alert('Bye-Bye!'); }, 5000);
+*/
+
+// let i = 1;
+// setInterval(function() {
+//   func(i++);
+// }, 100);
+
+function func(num) {
+    alert(`Hi${num}! I am Hanna`);
+  }
+
+let i = 1;
+setInterval(()=>func(i++), 100);
+
+let j = 1;
+setTimeout(function run() {
+  func(j++);
+  setTimeout(run, 100);
+}, 100);
