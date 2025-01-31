@@ -99,6 +99,7 @@ aside.left1 {
     height: 20vh;
     position: sticky;
     top:0;
+    padding:1%;
 }
 
 aside.left2 {
@@ -108,6 +109,7 @@ aside.left2 {
     box-sizing:border-box;
     width: 25%;
     height: 35vh;
+    padding:1%;
 }
 
 main {
@@ -140,7 +142,24 @@ aside.right {
     height: 56.7vh;
     width: 16%;
     background-color: blueviolet;
+    padding:1%;
 
+}
+
+aside.right div {
+    /* position: relative; */
+    width:60%;
+    height:40%;
+}
+
+aside.right .advertisement{
+    box-sizing:border-box;
+    width:10%;
+    height:10%;
+    position: fixed;
+    bottom:22%;
+    left: 87%; 
+    
 }
 
 footer
@@ -223,6 +242,68 @@ ul.icons li {
     font-size: 1.5vh; /*vh (% of the viewport height) */
 
 }
+
+.left2 ol {
+    background-color: rgb(235, 138, 138);
+    margin:1%;
+    padding:3%;
+}
+
+.left2 li{
+    list-style-position: inside;/*to expand background color to include item number*/
+    background-color: rgb(235, 72, 72);
+    margin:1%;
+    
+}
+
+.left2 li::marker {
+    color: rgb(104, 6, 6);
+    font-weight: bold;
+}
+
+.left2 span{
+    display: inline-block;
+    background-color: rgb(173, 36, 36);
+    color:white;
+}
+
+.right ul {
+    list-style-type: none;
+}
+
+.right li::after{
+    content: "\00d7";
+    color:rgb(153, 5, 5);
+    font-weight: bold;
+    
+}
+
+.right li::before{
+    content:  "📌";
+    
+}
+
+.right li.checked::before{
+    content:  "✅";
+    
+}
+
+.right li:nth-child(odd){
+    background-color: rgb(124, 178, 240);
+}
+
+.right li:nth-child(even){
+    background-color: rgb(56, 142, 240);
+}
+
+.right li.checked {
+    background-color: rgb(146, 150, 155);
+    text-decoration: line-through;
+}
+
+
+
+
 
 
 
