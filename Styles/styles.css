@@ -1,4 +1,229 @@
-h1:hover{
+body {
+    margin: 2px auto;
+    height: 100%;
+    width:100%;
+    padding:0;
+  }
+
+header {
+    margin: 1% auto;
+    box-sizing:border-box;
+    /* padding-top: 1%; */
+    width: 96%;
+    height: 12vh;
     background-color: blueviolet;
-    color: white;
+    position: relative;
+
 }
+
+img.StudentPhoto
+{
+    width:100%;
+    height:100%
+}
+
+header>figure {
+    margin: 0;
+    position: absolute;
+    top:12%;
+    left:3%;
+    width:15%;
+    height:80%; 
+}
+
+
+header>h1{
+    margin: 0 auto;
+    /* margin-top:5px; */
+    position: absolute; 
+    top:20%;
+    left:40%;
+    padding: 0.5%;
+    width:25%;
+    /* height:70%; */
+    /* background-color: blanchedalmond; */
+    color:rgb(234, 110, 195);
+    text-align: center;
+}
+
+nav {
+    margin: 0.5% auto;
+    background-color: blueviolet;
+    box-sizing:border-box;
+    width: 96%;
+    height: 5vh;
+    position: relative;
+    
+    }
+
+nav.top_menu ul {
+    list-style: none;
+    box-sizing:border-box;
+    margin:0;
+    /* margin-left: 1%; */
+    padding: 0.2%;
+    position: absolute;
+    left:3%;
+    top:10%;
+    height: 80%; 
+    width:100%;  
+       
+}
+
+nav.top_menu li {
+    display: inline-block;
+    box-sizing:border-box;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    margin: 0;
+    background-color: blue;
+    border-radius: 15px;
+    width:10%;
+    height: 80%;
+    text-align: center;
+    font-size: 1.5vh; /*vh (% of the viewport height) */
+    
+    
+}
+
+nav.top_menu li:hover {
+    background-color: pink;
+}
+
+aside.left1 {
+    margin: 1% auto;
+    margin-left: 2%;
+    background-color: blueviolet;
+    box-sizing:border-box;
+    width: 25%;
+    height: 20vh;
+    position: sticky;
+    top:0;
+}
+
+aside.left2 {
+    margin: 1% auto;
+    margin-left: 2%;
+    background-color: blueviolet;
+    box-sizing:border-box;
+    width: 25%;
+    height: 35vh;
+}
+
+main {
+    position: absolute;
+    top: 15.5%;
+    left: 28%;
+    box-sizing:border-box; 
+    margin-top: 4%;
+    margin-left:0.5%;
+    background-color: blueviolet;
+    height: 56.7vh;
+    width: 52%;
+}
+
+.section1, .section2 {
+    box-sizing:border-box; 
+    margin: 1% auto;
+    width:90%;
+    height:45%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+aside.right {
+    position: absolute;
+    box-sizing:border-box; 
+    margin-top: 4%;
+    top: 15.5%;
+    left: 82%; 
+    height: 56.7vh;
+    width: 16%;
+    background-color: blueviolet;
+
+}
+
+footer
+{   
+    position: fixed;
+    padding:0;
+    left:2%;
+    bottom: 0%; 
+    margin:0;
+    box-sizing:border-box;
+    margin: 0.2% auto;
+    background-color: blueviolet;
+    width: 95%;
+    height: 16vh;
+    
+
+}
+ 
+.bottom_menu
+{
+    box-sizing:border-box;
+    width: 30%;
+    margin-top: 1%;
+    height: 85%;
+    margin-left:1%;
+    /* background-color: rgb(122, 84, 84); */
+    position: relative;
+}
+
+.bottom_menu ul:first-child, .bottom_menu ul:nth-child(2)
+{
+    box-sizing:border-box;
+    height: 45%;
+    width:90%;
+    margin:1%;
+    padding:2%;
+    list-style: none;
+}
+
+nav.bottom_menu li {
+    display: inline-block;
+    box-sizing:border-box;
+    padding-top: 0.8%;
+    padding-bottom: 0.3%;
+    margin: 1% auto;
+    background-color: rgb(101, 51, 113);
+    border-radius: 15px;
+    width:30%;
+    height: 95%;
+    text-align: center;
+    font-size: 1.5vh; /*vh (% of the viewport height) */
+    color: white;
+    
+}
+
+ul.icons
+{
+    list-style: none;
+    box-sizing:border-box; 
+    position: absolute;
+    right: 0; 
+    bottom:5%;
+    height: 80%;
+    width: 30%;
+    /* background-color: rgb(123, 119, 128); */
+    padding:1.5%;
+}
+
+
+ul.icons li {
+    display: inline-block;
+    box-sizing:border-box;
+    border-radius: 50%;
+    width:15%;
+    height: 100%;
+    /* text-align: center; */
+    /* background-image: url('FB1.png');
+    background-repeat: no-repeat; */
+    /* padding:2%; */
+    font-size: 1.5vh; /*vh (% of the viewport height) */
+
+}
+
+
+
+
